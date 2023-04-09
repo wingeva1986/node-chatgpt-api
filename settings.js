@@ -54,7 +54,7 @@ export default {
         // Warning: This will expose your access token to a third party. Consider the risks before using this.
         reverseProxyUrl: 'https://bypass.churchless.tech/api/conversation',
         // Access token from https://chat.openai.com/api/auth/session
-        accessToken: '',
+        accessToken: process.env.BROWSER_TOKEN ||'eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6Ik1UaEVOVUpHTkVNMVFURTRNMEZCTWpkQ05UZzVNRFUxUlRVd1FVSkRNRU13UmtGRVFrRXpSZyJ9.eyJodHRwczovL2FwaS5vcGVuYWkuY29tL3Byb2ZpbGUiOnsiZW1haWwiOiJuZW5raUBwcmV0dHVzcy5zaG9wIiwiZW1haWxfdmVyaWZpZWQiOnRydWV9LCJodHRwczovL2FwaS5vcGVuYWkuY29tL2F1dGgiOnsidXNlcl9pZCI6InVzZXItWUxBRVFyMU50Um1OREh0QnFmYmtSTzgzIn0sImlzcyI6Imh0dHBzOi8vYXV0aDAub3BlbmFpLmNvbS8iLCJzdWIiOiJhdXRoMHw2NDJmMzQxYTAxMDY1ODZhMjAwYzY4OTIiLCJhdWQiOlsiaHR0cHM6Ly9hcGkub3BlbmFpLmNvbS92MSIsImh0dHBzOi8vb3BlbmFpLm9wZW5haS5hdXRoMGFwcC5jb20vdXNlcmluZm8iXSwiaWF0IjoxNjgwOTYxNzUwLCJleHAiOjE2ODIxNzEzNTAsImF6cCI6IlRkSkljYmUxNldvVEh0Tjk1bnl5d2g1RTR5T282SXRHIiwic2NvcGUiOiJvcGVuaWQgcHJvZmlsZSBlbWFpbCBtb2RlbC5yZWFkIG1vZGVsLnJlcXVlc3Qgb3JnYW5pemF0aW9uLnJlYWQgb2ZmbGluZV9hY2Nlc3MifQ.ubwcKmfcUo-LHYvdGjUk9dqPrEK7PzcPHrwpwIJwx_qiOhfOR5yxqD1fTj51n6CbxEKhKW-LHxNmpHm1oGARDm1XsJrLi_HsV58XsgNGdI-yxBa5kHTutscuV5XPHJODrMq8YClHa3aLK9SYbyz4qOXpbC0NhOctMkESb4lMOQieLuUafmQbZGVzqDxxT83U_b6xdw-gT9MJbseZ3KD2t0ZY8S4bSoEeGbLv-wGsayvM__fALxY5h_Mqbi_4tjAmhi0gr58B3dSusq7FSoe6wKzy0Z2kZdRGXgbsFSGiN4CwID1pSu-4S10MBuPS0O8BTbxl6nZZjQnh_yRgYj7vBg',
         // Cookies from chat.openai.com (likely not required if using reverse proxy server).
         cookies: '',
         // A proxy string like "http://<ip>:<port>"
@@ -69,7 +69,7 @@ export default {
         // (Optional) Set to true to enable `console.debug()` logging
         debug: false,
         // (Optional) Possible options: "chatgpt", "chatgpt-browser", "bing". (Default: "chatgpt")
-        clientToUse: 'chatgpt',
+        clientToUse: 'chatgpt-browser',
         // (Optional) Generate titles for each conversation for clients that support it (only ChatGPTClient for now).
         // This will be returned as a `title` property in the first response of the conversation.
         generateTitles: false,
