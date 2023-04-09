@@ -47,7 +47,7 @@ export default {
         // A proxy string like "http://<ip>:<port>"
         proxy: '',
         // (Optional) Set to true to enable `console.debug()` logging
-        debug: false,
+        debug: true,
     },
     chatGptBrowserClient: {
         // (Optional) Support for a reverse proxy for the conversation endpoint (private API server).
