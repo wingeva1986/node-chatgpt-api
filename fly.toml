@@ -1,6 +1,6 @@
 kill_signal = "SIGINT"
 kill_timeout = 5
-primary_region = "lax"
+primary_region = "hkg"
 processes = []
 
 [env]
