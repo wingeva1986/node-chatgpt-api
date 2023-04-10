@@ -34,7 +34,7 @@ export default {
         // A proxy string like "http://<ip>:<port>"
         proxy: '',
         // (Optional) Set to true to enable `console.debug()` logging
-        debug: false,
+        debug: true,
     },
     // Options for the Bing client
     bingAiClient: {
@@ -67,9 +67,9 @@ export default {
         port: process.env.API_PORT || 3000,
         host: process.env.API_HOST || 'localhost',
         // (Optional) Set to true to enable `console.debug()` logging
-        debug: false,
+        debug: true,
         // (Optional) Possible options: "chatgpt", "chatgpt-browser", "bing". (Default: "chatgpt")
-        clientToUse: 'bing',
+        clientToUse: 'chatgpt',
         // (Optional) Generate titles for each conversation for clients that support it (only ChatGPTClient for now).
         // This will be returned as a `title` property in the first response of the conversation.
         generateTitles: false,
